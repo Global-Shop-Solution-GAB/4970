@@ -1,0 +1,4 @@
+SELECT SUBSTRING(PART,1,17) AS "Part Number",SUBSTRING(PART,18,3) AS "Rev",  DESCRIPTION AS "Description", JOB AS "Job", SUFFIX AS "Suffix", PROJECT AS "Project Number", FLAG_WO_PRTD AS "Printed", DATE_DUE AS "Date Due"
+FROM V_JOB_HEADER
+WHERE JOB > ''
+ORDER BY "Job", "Suffix"
